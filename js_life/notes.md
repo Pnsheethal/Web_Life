@@ -201,10 +201,32 @@ ways to create:
 
 array methods:
         static methods (3):
-                Array.from{} : we can't itterate on boolean and numbers only string
+                Array.from{} : converts an iterable or array-like object into an array
+                       we can't itterate on boolean and numbers only string
                 Array.isArray():it will check given data is array or not 
                                 always return boolean values 
-                Array.of()=> it will return the data in array
+                Array.of()=> creates a new array using the given values.
+                                    it will return the data in array
                                 if we give the single item it will take as item only
                 
-        instance methods (31)
+        instance methods (31):
+                1        push(): add one or more element at end of the array
+                2       pop(): remove the end element
+                3        shift():remove the starting of the array
+                4       unshift():add an element at start of an array
+                5       slice(): return a shallow caopy of a portion of array into a new array
+                6       splice():changes the contents of an array by removing,replacing,or adding elements
+                               it will return the 
+                               if i don't want to delete the items in array but need to add the items for that we need togive the deletecount as 0
+                7       concat(): merge the 2 or more array and retrn new array
+                8       reverse(): reverse the array
+                9       join(): convert the array into a string by specified seperator
+                10       indexof()-->returns the index of the first occurance of a specified substring if not found return -1
+                11      lastindexof() --> return the index last occurance
+                12       includes()--> check if a array includes a specified element or not
+                13       entries(): return the object of key ,value pair by using the iterative for it will give in nested array
+                14      keys()
+                15      values()
+                16      every():
+
+Object: 
