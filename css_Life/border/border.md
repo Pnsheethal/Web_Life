@@ -1,0 +1,16 @@
+# Border Properties
+- border
+- border- width
+- border-style
+- border-color
+- border-top
+- border-bottom
+- border-left
+- border-right
+- border-radius: use to provide the curveness for the border or edges either go with pixel  or percentage , both width and height is equal
+- border-top-lefft-radius
+- border-top-right-radius
+- border-bottom-right-radius
+- border-bottom-left-radius
+- border-spacing
+- border-collapse

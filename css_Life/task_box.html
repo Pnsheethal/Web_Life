@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        body {
+            background-color:white;
+        }
+
+        .box-model {
+            width: 600px;
+            height: 400px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        /* MARGIN */
+        .margin {
+            width: 600px;
+            height: 400px;
+            background-color: skyblue;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* BORDER */
+        .border {
+            width: 540px;
+            height: 340px;
+            background-color: slategray;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* PADDING */
+        .padding {
+            width: 480px;
+            height: 280px;
+            background-color: cornflowerblue;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 420px;
+            height: 220px;
+            background-color: wheat;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+            color: white;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .content h2 {
+            color: white;
+            margin-top: 65px;
+        }
+
+        /* LABELS */
+        .top {
+            position: absolute;
+            top: -35px;
+            left: 270px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: -35px;
+            left: 250px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .left {
+            position: absolute;
+            left: -70px;
+            top: 190px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .right {
+            position: absolute;
+            right: -70px;
+            top: 190px;
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box-model">
+
+        <div class="top">TOP</div>
+        <div class="left">LEFT</div>
+        <div class="right">RIGHT</div>
+        <div class="bottom">BOTTOM</div>
+
+        <div class="margin">
+
+            <h2>MARGIN</h2>
+
+            <div class="border">
+
+                <h2>BORDER</h2>
+
+                <div class="padding">
+
+                    <h2>PADDING</h2>
+
+                    <div class="content">
+
+                        <h2>CONTENT</h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

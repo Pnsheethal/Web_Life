@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainCont{
+            /* width: 1000px; */
+            height: 500px;
+            border: 3px solid red;
+            display: grid;
+            /* flex-direction: row;  */
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content:center; */
+            /* justify-content: center; */
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* align-content:start; */
+            /* row-gap: 40px; */
+            /* column-gap: 100px;  */
+
+            /* gap: 40px 100px; */
+
+            /* we can  also give the column than it will arrange n horizentonal */
+              /* align-items: center; */
+              /* for row it will  */
+              /* align-items: center; */
+        }
+
+
+        /* child */
+        .box{
+            /* width: 100px; */
+            height: 50px;
+            background-color: lightblue;
+            border: 2px solid;
+        }
+
+      
+
+        /* #box2{
+            order: 5;
+        }
+
+        #box4{
+            order: 4;
+        }
+
+          #box3{
+            order: 3;
+            
+        }
+
+        #box5{
+            order: 1;
+        }
+        #box1{
+            order: 2;
+        } */
+
+
+         /* #box2{
+            order: 2;
+        }
+
+        #box4{
+            order: 3;
+        }
+
+          #box3{
+            order: 1;
+            
+        }
+
+        #box5{
+            order: 4;
+        }
+        #box1{
+            order: 5;
+        } */
+
+
+        /* #box1{
+            flex-grow: 4;
+        /* } */
+        /* #box3{
+            flex-grow: 2;
+        }  */
+
+        /* #box1{
+            flex-shrink: 3;
+            flex-basis: 300px;
+        } */
+
+        /* #box3{
+            flex-shrink: 2;
+        } */
+
+        /* #box4{
+            align-self:flex-end;
+        } */
+        
+      
+    </style>
+</head>
+<body>
+    <div class="mainCont">
+        <!-- 51342 -->
+        <div class="box" id="box1">box-1</div>
+        <div class="box" id="box2">box-2</div>
+        <div class="box" id="box3">box-3</div>
+        <div class="box" id="box4">box-4</div>
+        <!-- <div class="box" id="box5">box-5</div> -->
+         <div class="box" id="box1">box-1</div>
+        <div class="box" id="box2">box-2</div>
+        <div class="box" id="box3">box-3</div>
+        <div class="box" id="box4">box-4</div>
+        <div class="box" id="box1">box-1</div>
+        <div class="box" id="box2">box-2</div>
+        <div class="box" id="box3">box-3</div>
+        <div class="box" id="box4">box-4</div>
+
+
+        <!-- 32451 -->
+        
+      
+
+    </div>
+</body>
+</html>
+
+
+
+<!-- when we use the flex it will display th element in horizantioal 
+ is used to arrange elements in a row or column
+
+parent properties are:
+   1 display:flex  -- makes the parent a flex container. 
+   2 flex-direction(it will decide how the element align
+                it will accept the row(default),col,row-revers,col-revers
+   3 justify-content:(start,end,space-between,around,even) ==> it control the position of the elements along with the  MAIN AXIS            
+    4  align-item: controls the items along the cross axis. (cross axis)      
+    5 flex-wrap : it will spcify whether towap the flex items into the next line or not
+                values:wrap(it will take optimial size ), nowrap (default) it will shrink it's width  ,
+    6 align-content: it will specify the postion of wrapped flex items
+    it will apply only when the flex items is wraped 
+    it will not apply when the content is nowraped 
+                values(sater,center,end,space-bettwen,space-around,stretch)            
+    7.gap: 40px(row-gap) 100px(column-gap) this is the shorthand property
+    8. row-gap()
+    9. column-gap()
+    
+                
+child properties
+        order : changes the visual order of the flex items without changing html structure
+                    value(default:1)
+        flex-grow :  specifies how much flex item should grow relative  to the other flex items when there is a extra space available
+                    value(default;0)   
+                    
+        flex-shrink: default(1) 0(items will give it's original width)
+        flex-basis: it will work on main axis 
+                        when flex-direction(row); it will work on width
+                        when we give flex-direction(cloumn):it will work on height
+
+        flex: grow shrink basis;
+        align-self: 
+                ->

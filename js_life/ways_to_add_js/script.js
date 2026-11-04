@@ -1,0 +1,1 @@
+console.log("Hello everyone this is javascript class")

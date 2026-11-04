@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 30px;
+        }
+        .container{
+            /* width: 100vw; 
+            for vw and vh we need to giv 100 only  
+            height: 100vh; */
+            width: 800px;
+            height: 400px;
+            background-color: blueviolet;
+            font-size: 20px;
+        }
+
+        .child{
+            /* width: 50%;
+            height: 100%; */
+           
+            /* It will calculate with the default px with rem 
+            the default pixels is 16  */
+             /* width: 10rem;
+            height: 10rem; */
+           
+
+            width: 10em;
+            height: 10em;
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- parent -->
+    <div class="container"> 
+        
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+</html>

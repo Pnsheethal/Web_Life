@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.mainNavBar{
+    width: 100%;
+    height: 75px;
+    /* background-color: purple; */
+    display: flex;
+    border-bottom: 2px solid black;
+    /* justify-content: center; */
+    padding: 0px 20px;
+    align-items: center;
+}
+
+
+.leftNav{
+    width: 50%;
+    height: 75px;
+    /* background-color: greenyellow; */
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.rightNav{
+    width: 50%;
+    height: 75px;
+    /* background-color: yellow; */
+    /* padding-left: 90px; */
+    display: flex;
+    align-items: center;
+}
+
+.rightNav ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.rightNav ul li{
+    padding-left: 50px;
+    list-style: none;
+    
+}
+
+.rightNav ul li a{
+    text-decoration: none;
+}
+
+
+.rightNav ul button{
+    padding: 10px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+
+/* main body */
+
+main{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: red; */
+    border-bottom: 1px solid;
+    display: flex;
+
+}
+
+
+.rightmain{
+    width: 60%;
+    flex-direction: column;
+    height: 100%;
+    /* background-color: plum; */
+    font-size: 40px; 
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-weight: 100px; */
+    /* padding: 20px; */
+    /* align-content: flex-end; */
+}
+
+.rightmain h1{
+    /* font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-weight: 100; */
+   font-weight: 200;
+   align-items: flex-start;
+   /* letter-spacing:3px; */
+   padding: 70px;
+}
+
+
+.rightmain p{
+    align-self: center;
+    font-weight: 400;
+    font-size: large;
+    padding-left: 40px;
+}
+
+.rightmain button{
+    padding: 10px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+    /* padding: 3px; */
+}
+.leftmain{
+    width: 40%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+
+.leftmain img{
+    width: 550px;
+    height: 500px;
+    padding-left: 20px;
+}
+
+
+@media (max-width:1153px) {
+    .rightNav ul li{
+        display: none;
+    }
+
+    .rightNav button{
+        align-self: flex-end;
+        margin-left: 320px;
+    }
+
+   
+    
+}
+
+
+@media screen {
+    
+}

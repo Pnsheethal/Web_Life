@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation Fill Mode</title>
+    <style>
+        .main {
+            width: 600px;
+            height: 450px;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 50px;
+            margin: 15px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            left: 0;
+        }
+
+        /* .box1 {
+            background-color: red;
+            animation: move 3s ease;
+            animation-fill-mode: none;
+        } */
+
+        .box2 {
+            background-color: blue;
+            animation: move 3s ease;
+            animation-fill-mode: forwards;
+        }
+
+        .box3 {
+            background-color: green;
+            animation: move 3s ease;
+            /* animation-delay: 2s; */
+            animation-fill-mode: backwards;
+        }
+
+        /* .box4 {
+            background-color: orange;
+            animation: move 3s ease;
+            animation-delay: 2s;
+            animation-fill-mode: both;
+        } */
+
+        @keyframes move {
+            from {
+                left: 0;
+            }
+            to {
+                left: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Animation Fill Mode</h2>
+
+    <div class="main">
+        <div class="box box1">None</div>
+        <div class="box box2">Forwards</div>
+        <div class="box box3">Backwards</div>
+        <div class="box box4">Both</div>
+    </div>
+
+</body>
+</html>
+```

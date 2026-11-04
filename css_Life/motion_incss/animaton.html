@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 800px;
+            height: 500px;
+            border: 5px solid red;
+        }
+
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(46, 219, 15);
+            border: 3px solid black;
+            /* animation-name: s; */
+            animation-duration: 3s;
+            /* animation-timing-function: ease; */
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+            /* animation-timing-function: cubic-bezier(0.01, 0.22, 0.165, 1); */
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 4; */
+
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+
+
+        }
+
+        /* @keyframes s {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            25% {
+                transform: translate(700px, 0px);
+                background-color: pink;
+            }
+
+            50% {
+                transform: translate(700px, 400px);
+                background-color: yellow;
+            }
+
+            75% {
+                transform: translate(0px, 400px);
+                background-color: rebeccapurple;
+            }
+
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+            <h2>box1</h2>
+        </div>
+    </div>
+</body>
+
+</html>

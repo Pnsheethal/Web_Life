@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chatbot Pages</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            /* min-height: 3200px; */
+            border: 2px solid violet;
+            position: relative;
+        }
+
+        .box {
+            width: 100%;
+            height: 800px;
+
+            border: 2px solid red;
+
+            padding: 30px;
+            font-size: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #box1 {
+            background-color: blueviolet;
+        }
+
+        #box2 {
+            background-color: lightblue;
+        }
+
+        #box3 {
+            background-color: lightcoral;
+        }
+
+        #box4 {
+            background-color: lightyellow;
+        }
+
+
+        .chatbot {
+            width: 280px;
+            height: 350px;
+
+            border: 2px solid black;
+            border-radius: 15px;
+
+            position: sticky;
+            top: 100px;
+
+            /* background-color: white; */
+        }
+
+        .chatbot-area {
+            width: 280px;
+            height: 1200px;
+
+            position: absolute;
+            top: 1200px;
+            right: 25px;
+        }
+
+        .chat-header {
+            height: 55px;
+            /* background-color: purple; */
+            color: black;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            /* gap: 10px; */
+        }
+
+        .chat-header img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+             position: relative;
+           left: 180px;
+           top: 260px;
+        }
+
+        .message {
+            width: 200px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .chat-input input {
+            width: 100%;
+            height: 35px;
+
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 8px;
+        }
+
+        .chat-input input {
+            width: 50%;
+            height: 35px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 8px;
+            position: relative;
+            top: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box1">
+            Page 1
+        </div>
+
+        <div class="box" id="box2">
+            Page 2
+        </div>
+        <div class="chatbot-area">
+
+            <div class="chatbot">
+
+                <div class="chat-header">
+
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/200e8d139737079.6234b0487404d.gif"
+                        alt="Chatbot">
+
+                </div>
+
+                <div class="chat-body">
+
+                    <div class="message">
+                        Hello! How can I help you?
+                    </div>
+
+                    <div class="message">
+                        Ask me anything.
+                    </div>
+
+                </div>
+
+                <div class="chat-input">
+
+                    <input type="text" placeholder="Type a message...">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="box" id="box3">
+            Page 3
+        </div>
+
+        <div class="box" id="box4">
+            Page 4
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

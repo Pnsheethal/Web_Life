@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 800px;
+            height: 500px;
+            border: 3px solid red;
+
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(46, 219, 15);
+            /* transform: translateX(400px);
+            transform: translateY(300px); */
+            /* transform: translate(700px,300px); */
+
+            /* transform: rotateX(50deg);
+            transform: rotateY(60deg);
+            transform: rotate(20deg); */
+            /* transform: scaleX(5);
+            transform: scaleY(6);
+            transform: scale(-2,6); */
+
+            /* transform: skewX(20deg);
+            transform: skewY(40deg); */
+            /* transform: skew(30deg,50deg); */
+
+
+            /* transform: rotate(30deg);
+            transform-origin: top left; */
+
+
+
+            transition-duration: 5s;
+            /* transition-property: all; */
+            /* transition-timing-function: ease;
+            transition-timing-function: ease-in;
+            transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            background-color: hotpink;
+            /* transition-delay: 5s; */
+            /* border-radius: 50px; */
+            border: 2px solid black;
+
+
+        }
+
+        .child:hover {
+            transform: translateX(700px) rotate(180deg);
+            /* transition: all; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+            <h1>Box-1</h1>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- more interactive and attractive
+3 parts
+ 1.transform:use to change the position,shape,size orientation of html without effecting the normal documnet layout
+        1 translate():move an element from its original position without affecting the layout of other element
+        2 rotate():help to rotate the elements(clockwiseand anticlockwise)
+        3 scale():increase or decrease of the element 
+        4 skew(): it will slant the element (horizantoland vertical)
+        5 transform-orign:
+ 2 transition: create a smooth animantion whenever css property changes or user actions
+        transition-proprtiy
+        transition-duration
+        transition-timing-function: decid how the animation progress from strt to finish
+                ease:
+                ease-in:
+                ease-out:
+                ease-in-out:
+        transition-delay:how long to wait before tostrt
+ 3.animation:change its style automatically over time without requiring user nteraction
+            @keyframes:it define the different stages of an animation
+            based on the multiple stages wwe can create multiple animation
+                    animation-name:
+                    animation-duaration
+  -->

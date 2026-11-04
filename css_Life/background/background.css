@@ -1,0 +1,47 @@
+#box{
+    height:800px;
+    width: 800px;
+    border: solid;
+
+
+    background-color: blanchedalmond;
+    /* default value id (white), any color */
+
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=);
+
+
+    background-repeat:no-repeat;
+    /* It will specify the repeating pattern of the background image
+    values : repeat(default), no-repeat, repeat-x , repeat-y */
+
+    /* background-position-x:right ; */
+    /* It will specify the position of the image whether the image x-axis 
+    values: left(d), right, center */
+
+    /* background-position-y:center ; */
+    /* It will specify the position of the image whether the image y-axix
+    values: top(d), bottom, center */
+
+
+    /* background-position: center top; */
+    /* It is a shorthand property of the backgroud position-x and position-y */
+
+
+    /* background-size: contain; */
+    /* It will specify the size of the background image
+    values : auto(d), contain, cover, any number */
+    background-size: cover;
+    /* background-size: 100px; */
+
+}
+
+
+/* body{
+    background: url(https://c4.wallpaperflare.com/wallpaper/465/952/896/prabhas-8k-4k-baahubali-2-the-conclusion-wallpaper-preview.jpg) 
+    no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    text-align: justify;
+    background-attachment: scroll;
+    background-attachment: fixed;
+} */

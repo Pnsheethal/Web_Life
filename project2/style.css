@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(240, 236, 232);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mainnav {
+    width: 100%;
+    height: 69px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    display: flex;
+
+}
+
+.leftnav {
+    width: 50%;
+    height: 75px;
+    align-items: center;
+    display: flex;
+    padding-left: 40px;
+}
+
+
+.rightnav {
+    width: 50%;
+    height: 75px;
+    align-items: center;
+    display: flex;
+}
+
+
+.rightnav ul {
+    /* width: 50%;
+   height: 75px; */
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.rightnav ul li {
+    display: flex;
+    padding-left: 40px;
+}
+
+.rightnav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.rightnav ul button {
+    /* border-color: black; */
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightmain {
+    /* background-color: red; */
+    width: 60%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rightmain h1 {
+    display: flex;
+    align-self: center;
+    padding: 100px;
+    /* margin: 20px; */
+    font-size: 100px;
+    font-weight: 400;
+    word-spacing: 20px;
+    /* letter-spacing: 2px; */
+    /* font-style: italic; */
+    margin-bottom: -95px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.rightmain p {
+    /* background-color: green; */
+    align-self: top;
+    padding-left: 100px;
+    font-size: larger;
+    margin-bottom: 10px;
+
+
+}
+
+.rightmain button {
+    height: 30px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin-left: 100px;
+}
+
+
+.leftmain {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftmain img {
+    width: 600px;
+    height: 540px;
+    /* padding-left: 190px; */
+    object-fit: cover;
+}
+
+
+
+.foot {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.foot ul {
+    display: flex;
+    /* align-items: center; */
+    column-gap: 10px;
+
+}
+
+.foot ul li {
+    display: flex;
+    padding: 20px;
+    /* align-items: center; */
+}
+
+
+
+/* responsive page for this project */
+@media (max-width:1267px) {
+    .rightnav ul li {
+        display: none;
+    }
+
+    .rightnav ul button {
+        margin-left: 100px;
+
+    }
+
+    .menu img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    main
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .rightmain{
+        width: 100%;
+        height: auto;
+    }
+
+    .rightmain h1{
+        padding: 20px;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+
+    .leftmain img{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+    .leftmain  {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding: 20px;
+    }
+
+    .foot{
+        width: 100%;
+        height: auto;
+    }
+
+    .foot ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

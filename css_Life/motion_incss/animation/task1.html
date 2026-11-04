@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main{
+            width: 350px;
+            height: 350px;
+            border: 3px solid white;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px 2px white;
+            animation: s 5s infinite linear;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        
+        }
+
+
+        .child{
+            width: 70px;
+            height: 70px;
+            background-color: gold;
+            position: absolute;
+            top: 30px;
+            border-radius: 50%;
+             box-shadow: 2px 2px 10px 2px gold;
+
+        }
+
+
+        @keyframes s {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

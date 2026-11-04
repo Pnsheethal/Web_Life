@@ -1,0 +1,191 @@
+internal css
+ * way of adding the css in same html file itself.it recommended to use in head tsg only .by using Style tag
+
+ external css
+ * way of writting all css code in one file which is saved with .css extension to linkthat css to html file we use a link tag
+
+*inline will have the highest priority
+* fro internal and external css it will select which was the near it will execute based on that
+
+*/to give other css priority except inline we use the keyword as '!important'  it will overide the inline css we can use this for both internal and external css also 
+
+
+24/8/26
+selectors helps us to target the html elements in many ways 
+1.simple selectors : basic way to target or apporach the html(TagName,Grouping,universal,id Name, Class Name)
+2.combinator selectors :it is a combination of 2 simple selectors based on the releationof element or hirechary of elements it will execute
+3.pseudo class selectors : symbol is :
+          it works on state and bheviour of the element. use to define a special state of an element no need to specify id,class
+          style an element when user moves the mouse over it 
+4. pseudo element selectors: used to style specifice part of an element
+          symbol is ::
+5. attribute selectors: it will target the elementbased on the attribute name
+
+
+id Name:whenever we use the id selector we need to use the id="head" and in style we use that id by #head
+  *it allows multiple id for other also , it will not give the error, but not recommended
+
+Class Name: if we want to select the group of html elements 
+  symbol is "." examppl: .main , .head, .easy etc 
+
+Grouping selector : it group multiple selectors itself and target it 
+  symbol is:"," example: .main,h3,.para
+
+Universial selector: it will select all element in the directory in html file
+ symbole is : * 
+color is used to text color
+
+
+2.combinator selectors: 
+types:
+  1.Descendent selector: it will target all the childern,grandchildern,great grandchildern and so on
+       it will select the nested child also. 
+       symbol is : space (   )
+  2.Direct child selector : it will target only childern not grandchildern
+        symbol: > 
+  3.Adjacent Sibling selector : it will target only first right next Sibling
+      symbol: + 
+  4.General Sibling Selector : it will target all the  right Sibling of the  element
+      symbol: ~ 
+
+
+3.pseudo class selectors:
+types:
+    1.hover:it will apply the properties whenever we move the cursor 
+    2.link: it will apply the properties whenever link unvisited link
+    3.visited: it will apply the properties whenever link is visited
+    4.active: it will apply the properties whenever on active state link 
+    5. first-child: it will target only first child 
+    6.last-child
+    7. nth-child: (even/odd/2n/2n+1) it will target the specific child based on the parameter
+    8.first-of-type: the both  will select based on the type which we given in style 
+    9.last-of-type
+    10.nth-of-type:will select based on the type which we given in style 
+        if i want to select 2nd one we can pass parameter
+    
+4. pseudo element selectors:
+types:
+      1  ::first-letter
+      2 ::first-line
+      3 ::before
+      4 ::after
+      5 ::selection
+      6 ::marker - is use in list , if we want the list in any other type we use the content
+      7 ::placeholder : used in form
+
+
+5. attribute selectors: 
+1.attribute_Name[] :  input[type]{
+            background-color: rgb(217, 144, 199);
+        }
+2.attribute_Name[value] : input[type="mail"]{
+            background-color: brown;
+        } insted of mail we can alos pass text,tel etc
+3.Tag_name[attribut~=value]:  it will select the specific word in a element
+  input[placeholder ~="name"]{
+            background-color: brown;
+        } inseted of name we can specify like enter, your,mail,phonenumber like this 
+4.
+
+
+releative units: these are dynamic, it will depend on some other values
+    vw- viewport width
+    vh- viewport height
+    % - depend on the parent element size
+    rem - root element font size
+    em -parent element font size
+
+
+
+background properties
+
+    background-color
+    background-size
+    background-image
+    background-position
+    background-position-x
+    background-position-y
+    background
+    background-repeat
+    background-attachment
+
+
+colors: 
+    rgb,color-name
+
+
+float and clear properties : to align/position the elements 
+        by using the float properties we can align the element
+        if we floating some content it will effect to next element
+    clear: to prevent the wraped content we will use the clear
+
+
+position propertie: to overcome from float and clear we use this
+        use to arreange the elements in web page. it will change the position based on the position behavior
+
+   to deal with position we have to use  helping  properties: left,right,top and bottom
+
+    types we have 5 types:
+        static (default) : it will not perform any changes 
+                            helping propertie is not required
+        releative: it will change the position of an element with respect to its orignal position
+                    it will leave an empty space, but doesn't leave 
+        absolute: It changes the position of an element with respect to its nearest positioned ancestor.
+                   it will change the position of an element with repsect to the parent 
+                    the placed is not preseved  it will overlap 
+                    it will position the element 
+        fixed : it will not preseved the empty space. 
+                the position will be fixed based on the view port 
+                 it does not have any limit  
+        sticky: to provide the limit we use sticky and 
+                it preseved the place 
+                it will position inside the parent block 
+                if the parent block 
+
+
+<!-- grid:use to create 2 dimensional
+1. parent:  total(9) 
+    i)display:grid(it will create  grid container and the child elements were called as grid items)
+   ii) grid-template-columns:  
+   it will decide the size(width) of the explicit defined columns
+   it decides the number of column and size of column
+        (auto):it will take automatically widith
+        (auto-fill):
+        repeat(4,200px):at first it will take the count next it will take the space 
+        fr: which divide into equal parts .here we need to mention the size like 1fr,2fr,3fr 
+             but in auto no need to give the numbers it will automatically take the width
+
+    iii) grid-template-rows:it will decide the size(height) of the explicit defined row
+                             it will specifies only size of rows but not the columns 
+    iv)grid-auto-flow: explicitly(created by the developers), implicitly(created by browser or default) 
+    tells the browser how to place implicitily created grid items automatically
+                    it accept 2 things(row,columns)default value is (row)
+                    it will take the explicitl size and rest values will be implicitil 
+
+    v)grid-auto-columns:it will targert the implicitly 
+    vi)grid-auto-rows: 
+            grid-auto-rows: 300px;
+             grid-template-rows: 50px 100px 150px;
+    vii)gap:it provide th gaps
+            gap:row column
+     viii) row-gap
+     ix) column-gap
+     x)justify-content:it will align the entire grid (horizantle)
+     xi)align-content:(verticle) it will align entire grid 
+     12)align-items:indivduavl grid items will be alligned (vertical)
+    13) justify-items: (horizential) based on the content width it will align 
+
+
+2.child properties: grid lines is a horizantel or vertical lines which seperate the row and columns in css
+      (7)  grid-column-start
+        grid-column-end 
+        grid-row-start and grid-row-end
+          * for this we have shorthand properties :
+                    grid-column: start/end
+                    grid-row:start/end
+                    *fro this also we have shorthand 
+                            grid-area : grid-row-start/grid-column-start/grid-row-end/grid-colmn-end
+            8 justify-self:inside own single it will align(horizantel),default(strech)
+            9.align-self : verical
+                    * shorthand propeerty: 
+                             (10)   place-self:justify  align -->

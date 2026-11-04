@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head h3  {
+            background-color: blue;
+            color: white;
+        }
+
+
+
+        .hi > .child1> h3  {
+            background-color: blue;
+            color: white;
+        }
+         /* .hi> .child2 >h3{
+            background-color: blue;
+            color: white;
+         } */
+        h1+h3 {
+            background-color: blue;
+            color: white;
+        }
+
+        h1 ~ h2{
+            background-color: blue;
+            color: white;
+        }
+
+        h1~.main{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Descendent Combinator</h1>
+        <div class="child1">
+            <h3>Child</h3>
+        </div>
+        <div class="child2">
+            <h3>child</h3>
+            <ul>
+                <li>
+                    <h3>Descendent</h3></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="hi">
+          <h1>Child Combinator</h1>
+    
+    <div class="child1"><h3>Child</h3></div>
+    <div class="child1"><h3>Child</h3></div>
+    <ul>
+        <li>Descendent</li>
+    </ul>
+    </div>
+
+    <h1>Adjacent Sibling Combinator</h1>
+    <h3>First Sibling after heading</h3>
+    <h3>Second Sibling after heading</h3>
+
+
+    <h1>General Sibling Combinator</h1>
+    <h3 class="main">First Sibling after heading</h3>
+    <h3 class="main">Second Sibling after heading</h3>
+
+</body>
+
+</html>
