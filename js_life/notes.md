@@ -102,15 +102,7 @@ Operators:
         division(/=)
 
 
-Hoisting : accessing the vaiabe before declarization.
-          variables comes top of the scope 
 
-                in var it is possible (it show the undefined)
-                but in let,const is possible but it move to a temporal dead zone(it is a timespan b/w accessing var and declar a var in leat and const) it show the reference error
-
-variable phase and execution phase: js engine will read the js code 2times
-                                1st js engine reading the js code is in variable phase (only read the variables)
-                                2nd time it will be a execution phase
 
 
 looping: is a way to repeat a block of code multiple times based on a condition
@@ -230,3 +222,56 @@ array methods:
                 16      every():
 
 Object: 
+
+typecasting: Type casting means converting one data type into another data type.
+        types:
+                Implicit Type Casting (Type Coercion)
+                Explicit Type Casting (Type Conversion)
+        
+truthy and falsy: 
+        Falsy means values that are considered false in a Boolean condition.
+                Value	Meaning
+                false	Boolean false
+                0	Zero
+                -0	Negative zero
+                0n	BigInt zero
+                " "	Empty string
+                null	No value
+                undefined	Value not assigned
+                NaN	Not a Number
+        Truthy values
+        Truthy means values that are considered true in a Boolean condition
+        Some common truthy values:
+        - Any non-zero number: 10, -5, 1
+        - Any non-empty string: "hello", "JavaScript"
+        - Empty array: []
+        - Empty object: {}
+        - "0"
+        - "false"
+
+
+
+Hoisting : Hoisting is JavaScript's behaviour of processing variable and function declarations before executing the code.
+                it will work on let,const and var it will be hosting
+
+              Yes. Both let and const are hoisted, but they remain in the Temporal Dead Zone until initialization. Therefore, they cannot be accessed before their declaration is executed.
+
+
+creation phase and execution phase:
+Creation Phase (Memory Creation Phase)
+During the creation phase, JavaScript prepares memory for variables and functions before executing the code.
+
+1. What happens?
+- Memory is allocated for variables.
+- var variables are initialized with undefined.
+- let and const variables are allocated but remain uninitialized (TDZ).
+- Function declarations are stored with their complete function definition
+
+2. Execution Phase (Code Execution Phase)
+During the execution phase, JavaScript executes the code line by line.
+
+What happens?
+- Values are assigned to variables.
+- Functions are executed when called.
+- Expressions are evaluated.
+- Output is produced.
