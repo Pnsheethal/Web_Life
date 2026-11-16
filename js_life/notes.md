@@ -254,6 +254,8 @@ truthy and falsy:
 Hoisting : Hoisting is JavaScript's behaviour of processing variable and function declarations before executing the code.
                 it will work on let,const and var it will be hosting
 
+                **Hoisting in JavaScript** is a mechanism where variable and function declarations are moved to the top of their scope before code execution.
+
               Yes. Both let and const are hoisted, but they remain in the Temporal Dead Zone until initialization. Therefore, they cannot be accessed before their declaration is executed.
 
 

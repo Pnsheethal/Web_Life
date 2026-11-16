@@ -80,7 +80,7 @@
 // console.log(newStr);
 
 // *includes
-let str = 'Javascript is a good language '
+// let str = 'Javascript is a good language '
 // console.log(str.includes('is'));    //*true
 // console.log(str.includes('isthe')); //*false
 // console.log(str.includes('is',20)); //* the last one index
