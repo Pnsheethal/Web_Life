@@ -277,3 +277,16 @@ What happens?
 - Functions are executed when called.
 - Expressions are evaluated.
 - Output is produced.
+
+Scope:
+        types:
+                Global Scope: the variable which is declare outside the function and block and can access at anywhere in the program
+                Functional Scope:the variable which aare declare inside the function and calling inside the function only
+                Block Scope: mention in {}
+                if the data is declear by using the var inside the function it can access outside of the function
+                but let and const will not access outside the block 
+
+Object: This are the
+        internally it will store in nthe form of strings
+        it will not maintain the order
+        if it have a key-value pair it will known as property
