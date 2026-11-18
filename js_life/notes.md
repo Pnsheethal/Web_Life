@@ -290,3 +290,5 @@ Object: This are the
         internally it will store in nthe form of strings
         it will not maintain the order
         if it have a key-value pair it will known as property
+
+Why do we use Object when we have the array(imp fro interview)
