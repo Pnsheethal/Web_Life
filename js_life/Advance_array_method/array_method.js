@@ -107,13 +107,30 @@
 //! find out the sum of all the even numbers in array
 let data=[1,2,3,4,5,6,7,8,9,10]
 
-let result= data.reduce((sum,currnum)=> currnum%2 ==0 ? sum+currnum:sum,0)
-// let result= data.filter((item,index,org)=> item % 2 ===0)
-// let res2=data.reduce(item,cur)
-console.log(result);
+// let result=data.filter(x=> x%2==0).reduce((acc,curnum)=>acc+curnum)
+// console.log(result);
 
 //! count all the odd numbers in array
+
+// let result=data.filter(x=>x%2!=0).reduce((acc,cunum)=>acc+1)
+// console.log(result);  //* 5
+
+
 //! find the sum of square of an elemntes
+// let result=data.map((item,index,org)=> item*item).reduce((acc,curnum)=>acc+curnum)
+// console.log(result);
+
 //! count how many numbers are divisible by 2 and 3
-//! find total number od=f char in all the string
+
+// let result=data.filter((item,index,org)=>item%2==0 && item%3==0).length
+// console.log(result);
+
+//* [6] and count 1
+
+//! find total number odd char in all the string
+// let data = ["sheethal", "shobha", "html", "css", "web"];
+// // let result=data.filter((item,index,orgn)=>item.length %2!=0).reduce((acc,curnum)=>acc+curnum.length,0)
+// let result1 =
+// console.log(result);
+
 
