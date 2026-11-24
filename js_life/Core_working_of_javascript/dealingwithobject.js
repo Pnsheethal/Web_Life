@@ -49,8 +49,6 @@
 // console.log(object1);   //* { name: 'somu', age: 20 }
 // console.log(obj2);       //* { name: 'somu', age: 20 }
 // console.log("after updating");
-
-
 // obj2.age=100
 
 
@@ -62,22 +60,49 @@
 //******************************************************************* */
 
 //* closur: accesses variables from its outer (parent) function even after the outer function has finished executing.
-function outerfunction() {
-    console.log('outerfunction is stared');
+// function outerfunction() {
+//     console.log('outerfunction is stared');
 
-    let outerfunctionData = 10
-    function innerfunction() {
-        console.log('innerfunction started');
+//     let outerfunctionData = 10
+//     function innerfunction() {
+//         console.log('innerfunction started');
 
-        console.log("accessing outerfunction " + outerfunctionData);
-        console.log("innerfunction is ended");
+//         console.log("accessing outerfunction " + outerfunctionData);
+//         console.log("innerfunction is ended");
 
 
+//     }
+//     console.log('outerfunction ended');
+
+//     return innerfunction
+// }
+// let result = outerfunction()
+// result()
+
+
+function first() {
+    console.log("First function started");
+
+    let x = 50;
+
+    function second() {
+        console.log("Second function started");
+
+        let y = 100;
+
+        function third() {
+            console.log("Third function started");
+            console.log("x =", x);
+            console.log("y =", y);
+            console.log("Third function ended");
+        }
+
+        return third;
     }
-    console.log('outerfunction ended');
 
-    return innerfunction
+    return second;
 }
-let result = outerfunction()
-result()
 
+let result1 = first();
+let result2 = result1();
+result2();
