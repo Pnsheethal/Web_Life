@@ -292,3 +292,11 @@ Object: This are the
         if it have a key-value pair it will known as property
 
 Why do we use Object when we have the array(imp fro interview)
+
+Modules:
+Instead of writing all the code in one JavaScript file, we can create separate files and share functions, variables, classes, and objects between them.
+types:
+        ES MODULE:
+                export → To send variables, functions, classes, etc. from one file.
+                import → To receive variables, functions, classes, etc. into another file.
+        COMMON MODULE
