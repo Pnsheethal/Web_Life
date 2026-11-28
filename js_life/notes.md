@@ -297,6 +297,18 @@ Modules:
 Instead of writing all the code in one JavaScript file, we can create separate files and share functions, variables, classes, and objects between them.
 types:
         ES MODULE:
+                
+        COMMON MODULE:
                 export → To send variables, functions, classes, etc. from one file.
                 import → To receive variables, functions, classes, etc. into another file.
-        COMMON MODULE
+
+
+-promise
+        pending
+        fullfiled/success
+        reject/failure
+        settaled
+
+
+
+        

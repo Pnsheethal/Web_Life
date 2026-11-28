@@ -75,6 +75,8 @@
 //! Array.of()
 // console.log(Array.of(1,2,3,4));  //?[ 1, 2, 3, 4 ]
 // console.log(Array.of(10));  //?[10]
+// console.log(Array,of('hello'));
+
 
 
 // * instance methods
@@ -191,11 +193,11 @@
 
 
 //& every()
-let arr=[2,4,6,7]
-let data =['red','white','green']
-console.log(arr.every((num)=>num%2 ===0));  //?false
-console.log(data.every((data)=>data === undefined)); //?false
-console.log(data.every((data)=>data !== undefined)); //? true
+// let arr=[2,4,6,7]
+// let data =['red','white','green']
+// console.log(arr.every((num)=>num%2 ===0));  //?false
+// console.log(data.every((data)=>data === undefined)); //?false
+// console.log(data.every((data)=>data !== undefined)); //? true
 
 
 
